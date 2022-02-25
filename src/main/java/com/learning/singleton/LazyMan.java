@@ -17,7 +17,7 @@ public class LazyMan {
 
     private volatile static LazyMan lazyMan;
 
-    // 双重检测锁模式的懒汉式单例 --DCL懒汉式
+    // 双重检测锁模式的懒汉式 --DCL懒汉式
     public static LazyMan getInstance() {
         if (lazyMan==null) {
             synchronized (LazyMan.class) {
