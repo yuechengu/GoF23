@@ -1,7 +1,7 @@
 package com.learning.proxy.demo04;
 
-import com.learning.demo02.UserService;
-import com.learning.demo02.UserServiceImpl;
+import com.learning.proxy.demo02.UserService;
+import com.learning.proxy.demo02.UserServiceImpl;
 
 public class Client {
     public static void main(String[] args) {

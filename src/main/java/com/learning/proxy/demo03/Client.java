@@ -5,9 +5,9 @@ public class Client {
         // 真实角色
         Host host = new Host();
 
-        // 代理角色：现在没有
+        // 代理角色处理器
         ProxyInvocationHandler pih = new ProxyInvocationHandler();
-        // 设置需要被代理的角色
+        // 设置被代理的角色
         pih.setRent(host);
         // 获得代理角色
         Rent proxy = (Rent) pih.getProxy();

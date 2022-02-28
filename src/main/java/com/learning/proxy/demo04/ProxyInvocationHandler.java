@@ -26,11 +26,10 @@ public class ProxyInvocationHandler implements InvocationHandler {
         return result;
     }
 
-    // 搞点新业务进去，不影响原有的原生业务
     // AOP 面向切面编程的顶层逻辑 即代理模式
-
+    // 搞点新业务进去，不影响原有的原生业务
     // 比如增加log打印
     public void log(String msg){
-        System.out.println("执行了"+msg+"方法");
+        System.out.println("[debug] 执行了"+msg+"方法");
     }
 }
